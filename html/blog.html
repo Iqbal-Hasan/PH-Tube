@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube - Blog</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/fav.png" type="image/x-icon">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- blog css link -->
+    <link rel="stylesheet" href="../css/blog.css" />
+  </head>
+  <body>
+    <header id="header" class="container">
+      <div class="main">
+        <div class="logo">
+          <a href="../index.html">
+            <img title="Home" src="../img/logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="common">
+        <h1 class="blog-title">Var, Let, and Const: What's the Difference?</h1>
+        <img class="blog-img" src="../img/images.png" alt="" />
+        <div class="point">
+          <h5>Var</h5>
+          <p>
+            The var keyword is the oldest and most basic way to declare
+            variables in JavaScript. Variables declared with var are
+            function-scoped, which means that they are accessible within the
+            function in which they are declared, and in any nested functions.
+            var variables can be reassigned, and they can be declared without
+            being initialized.
+          </p>
+        </div>
+        <div class="point">
+          <h5>Let</h5>
+          <p>
+            The let keyword was introduced in ES6 (ECMAScript 2015). Variables
+            declared with let are block-scoped, which means that they are
+            accessible within the block in which they are declared. Blocks are
+            defined by curly braces ({}). let variables can be reassigned, but
+            they cannot be re-declared.
+          </p>
+        </div>
+        <div class="point">
+          <h5>Const</h5>
+          <p>
+            The const keyword was also introduced in ES6. Variables declared
+            with const are constant, which means that they cannot be reassigned.
+            const variables are also block-scoped.
+          </p>
+        </div>
+        <h2 class="secodary-title">Which keyword should you use?</h2>
+        <div class="point">
+          <p class="margin-bottom">
+            In general, you should use let for variables that you may need to
+            reassign, and const for variables that you know will not change. You
+            can use var if you need to support older browsers that do not
+            support let or const.
+          </p>
+          <p class="margin-bottom">
+            Here are some additional things to keep in mind when using var, let,
+            and const:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              Variables declared with var are hoisted to the top of their scope,
+              even if they are declared later in the code. This means that they
+              can be accessed before they are declared, which can lead to
+              errors. Variables declared with let and const are not hoisted.
+            </li>
+            <li>
+              Variables declared with const must be initialized when they are
+              declared. This means that you cannot declare a const variable and
+              then initialize it later in the code.
+            </li>
+          </ul>
+          <p class="margin-bottom">
+            I hope this article helps you understand the differences between
+            var, let, and const in JavaScript.
+          </p>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class=" common">
+        <h1 class="blog-title">Null and Undefined in JavaScript</h1>
+        <img class="blog-img" src="../img/null.jpg" alt="" />
+        <p class="margin-bottom">
+          Null and undefined are two special values in JavaScript that represent
+          the absence of a value. Null is used to represent the intentional
+          absence of a value, while undefined is used to represent the
+          unintentional absence of a value.
+        </p>
+        <div class="point">
+          <h5>Undefined</h5>
+          <p>
+            Undefined is the default value for a variable that has not been
+            assigned a value. It is also the value that is returned by the
+            typeof operator when it is applied to an undefined variable.
+          </p>
+          <p class="margin-bottom">
+            Here are some examples of how undefined is used in JavaScript:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              A variable that is declared but not assigned a value is undefined.
+            </li>
+            <li>
+              The value returned by a function that does not return a value is
+              undefined.
+            </li>
+            <li>
+              The value of an object property that does not exist is undefined.
+            </li>
+          </ul>
+        </div>
+        <div class="point">
+          <h5>Null</h5>
+          <p>
+            Undefined is the default value for a variable that has not been
+            assigned a value. It is also the value that is returned by the
+            typeof operator when it is applied to an undefined variable.
+          </p>
+          <p class="margin-bottom">
+            Here are some examples of how undefined is used in JavaScript:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              A variable can be assigned the value of null to indicate that it
+              does not have a value.
+            </li>
+            <li>
+              A function can return the value of null to indicate that it did
+              not find the value that it was looking for.
+            </li>
+            <li>
+              An object property can be set to the value of null to indicate
+              that the property does not have a value.
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="secodary-title">When to Use Null and Undefined</h2>
+        <div class="point">
+          <p class="margin-bottom">
+            The following are some guidelines for when to use null and undefined
+            in JavaScript:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              Use undefined to represent the unintentional absence of a value.
+              For example, if a variable is declared but not assigned a value,
+              it should be undefined.
+            </li>
+            <li>
+              Use null to represent the intentional absence of a value. For
+              example, if a function does not find the value that it is looking
+              for, it can return the value of null.
+            </li>
+            <li>
+              Avoid using null and undefined interchangeably. They have
+              different meanings and should be used in different contexts.
+            </li>
+          </ul>
+          <p class="margin-bottom">
+            I hope this article was helpful. Let me know if you have any other
+            questions.
+          </p>
+        </div>
+      </div>
+
+      <hr class="line">
+
+      <div class=" common">
+        <h1 class="blog-title">What is a REST API?</h1>
+        <img class="blog-img" src="../img/rest.png" alt="" />
+
+        <div class="point">
+          <p class="margin-bottom">
+            A REST API (Representational State Transfer Application Programming
+            Interface) is an architectural style for designing web services. It
+            defines a set of constraints that must be followed in order to be
+            considered RESTful. These constraints include:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              Resource-oriented: The API must be organized around resources,
+              which are nouns that represent things in the real world. For
+              example, a REST API for a blog might have resources for posts,
+              comments, and users.
+            </li>
+            <li>
+              Stateless: The API must be stateless, which means that each
+              request must be self-contained and should not rely on any previous
+              requests. This makes the API more scalable and efficient.
+            </li>
+            <li>
+              Client-server: The API must be client-server, which means that the
+              client and server must be separate entities. This makes the API
+              more flexible and secure.
+            </li>
+            <li>
+              Cacheable: The API should be cacheable, which means that the
+              client should be able to cache responses from the server. This can
+              improve performance and reduce load on the server.
+            </li>
+            <li>
+              Uniform interface: The API must use a uniform interface, which
+              means that all requests and responses must use the same HTTP verbs
+              and message formats. This makes the API easier to use and
+              understand.
+            </li>
+          </ul>
+        </div>
+
+        <h2 class="secodary-title">Benefits of REST APIs</h2>
+        <div class="point">
+          <p class="margin-bottom">
+            REST APIs offer a number of benefits, including:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              Simple and easy to use: REST APIs are based on simple concepts
+              that are easy to understand and implement. This makes them a good
+              choice for developers of all skill levels.
+            </li>
+            <li>
+              Flexible and scalable: REST APIs are flexible and can be used to
+              build a wide variety of applications. They are also scalable,
+              which means that they can be easily adapted to handle increasing
+              traffic.
+            </li>
+            <li>
+              Efficient and reliable: REST APIs are efficient and reliable,
+              which makes them a good choice for applications that require high
+              performance.
+            </li>
+            <li>
+              Secure: REST APIs can be made secure by using encryption and other
+              security measures.
+            </li>
+          </ul>
+        </div>
+        <h2 class="secodary-title">Examples of REST APIs</h2>
+
+        <div class="point">
+          <p class="margin-bottom">
+            Some popular examples of REST APIs include:
+          </p>
+          <ul class="margin-bottom">
+            <li>
+              The GitHub API: This API allows developers to access information
+              about GitHub repositories, issues, and pull requests.
+            </li>
+            <li>
+              The Google Maps API: This API allows developers to integrate
+              Google Maps into their applications.
+            </li>
+            <li>
+              The Twitter API: This API allows developers to access tweets,
+              users, and other information from Twitter.
+            </li>
+            <li>
+              The Stripe API: This API allows developers to integrate Stripe
+              payment processing into their applications.
+            </li>
+          </ul>
+        </div>
+        <h2 class="secodary-title">Conclusion</h2>
+
+        <div class="point">
+          <p class="margin-bottom">
+            REST APIs are a popular choice for developers who want to build
+            applications that can communicate with other systems over the
+            internet. They are simple, flexible, scalable, efficient, and
+            secure, which makes them a good choice for a wide variety of
+            applications.
+          </p>
+          <p class="margin-bottom">I hope this article was helpful.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
